@@ -1,0 +1,133 @@
+#include<iostream>
+
+/*Это прогрмма для проверки больше меньшн или равно в различных языках (Английский,Русский и Узбекский)
+Прогрмма создань компание(Lions-Techno Group (L-TG)) под управлением директора Шерматова Бунёджона
+Минск\Беларус\Европа Дата:30,06,2018 год 19:30*/
+
+using namespace std;
+
+
+
+void main()
+
+{
+	int a;
+	int &grid = a;
+	
+
+	setlocale(LC_ALL, "Ru");
+
+	cout << "Please, choose interface language..." << endl;
+	cout << "1)Uz" << endl;
+	cout << "2)Ru" << endl;
+	cout << "3)Eng" << endl;
+	cout << "Your choice is :";
+	cin >> a;
+
+
+
+
+	if (a == 1)
+	{
+		int g, g1;
+		int &dan = g;
+		int &dan1 = g1;
+		cout << "\t\t\tSiz O'zbek tilini tanladingiz!" << endl;
+		cout << "Ushbu dastur kiritilgan raqamlarni katta-kichikligi bo'yicha solishtiradi" << endl;
+		cout << "Ma'lumot:Dastur asoschisi <<Shermatov Bunyodjon 'Lions-Techno Group LTD'>>" << endl;
+		cout << "Iltimos (a) raqamni kiriting: ";
+		cin >> g;
+		cout << "Iltimos (b) raqamni kiriting: ";
+		cin >> g1;
+		if (g > g1)
+		{
+			cout << "\n\n\t\t\t_Kiritilgan " << dan << " raqami kiritilgan " << dan1 << " raqamidan katta !_\n\n\n\n\n" << endl;
+		}
+		else if (g < g1)
+		{
+			cout << "\n\n\t\t\t_Kiritilgan " << dan << " raqami kiritilgan " << dan1 << " raqamidan kichik !_\n\n\n\n\n" << endl;
+		}
+	
+
+		else//(g == g1)
+		{
+			cout << "\n\n\t\t\t_Kiritilgan " << dan << " raqami kiritilgan " << dan1 << " raqamiga teng!_\n\n\n\n\n\n" << endl;
+		}
+
+		return ;
+
+	}
+	
+	else if (a == 2)
+	{
+		int r, r1;
+		int &daf = r;
+		int &daf1 = r1;
+		cout << "\t\t\tВы выбрали Русский язык!" << endl;
+		cout << "Это программа для проверки числ на больше , меньше или равно" << endl;
+		cout << "Инфо:Это программа создань компанией <<Shermatov Bunyodjon 'Lions-Techno Group LTD'>> " << endl;
+		cout << "Пожалуйста введите цифру (а): ";
+		cin >> r;
+		cout << "Пожалуйста введите цифру (b): ";
+		cin >> r1;
+
+		if (r > r1)
+		{
+			cout << "\n\n\t\t\t_Цифра " << daf << " больше чем цифра " << daf1 << " !_\n\n\n\n\n\n" << endl;
+		}
+
+		else if (r < r1)
+		{
+			cout << "\n\n\t\t\t_Цифра " << daf << " меньше чем цифра " << daf1 << " !_\n\n\n\n\n\n" << endl;
+		}
+
+		else//(r == r1)
+		{
+			cout << "\n\n\t\t\t_Цифра " << daf << " равно на цифру " << daf1 << " !_\n\n\n\n\n" << endl;
+		}
+		return ;
+	}
+	
+
+	else if(a == 3)
+	{
+		int x, x1;
+
+		int &aref = x;
+		int &aref1 = x1;
+
+		cout << "\t\t\t\tYou chose English language!" << endl;
+		cout << "This programm is to cheking numbers to more,less or equal" << endl;
+		cout << "Info:This programm made by <<Shermatov Bunyodjon 'Lions-Techno Group LTD Company'>>\n\n " << endl;
+		cout << "Please,enter number (а): ";
+		cin >> x;
+		cout << "Please,enter number (b): ";
+		cin >> x1;
+
+		if (x > x1)
+		{
+			cout << "\n\n\t\t\t_Number " << aref << " more than number " << aref1 << " !_\n\n\n\n\n" << endl;
+		}
+		
+		else if (x < x1)
+		{
+			cout << "\n\n\t\t\t_Number " << aref << " less than " << aref1 << " !_\n\n\n\n\n" << endl;
+		}
+		
+		else//(x == x1);
+		{
+			cout << "\n\n\t\t\t_Number " << aref << " equal to number " << aref1 << " !_\n\n\n\n" << endl;
+		}
+		return ;
+	}
+	else
+	{
+		{
+			cout << "\n\n\t\t\tWrong choice !" << endl;
+			cout << "\t\tPlease, check and reenter your choice!\n\n\n"<< endl;
+		}
+		return ;
+	}
+	system("Pause");
+}
+
